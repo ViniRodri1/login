@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+:root {
+    --background: #E9C46A;
+    --fonte: 'Kanit';
+    --cor-fonte: #003049;
+}
+
+body {
+    background: var(--background);
+    font-family: var(--fonte);
+    font-weight: 400;
+}
+
+.descrição-titulo {
+    display: none;
+}
+
+.descrição {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.descrição-imagem {
+    width: 60%;
+    margin: 1em 0;
+}
+
+.right-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #E76F51;
+    box-shadow: 10px 10px 20px;
+    padding: 1em 1.5em;
+    margin: 2em 0;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.card-titulo {
+    text-align: center;
+    color: var(--cor-fonte);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.input > label {
+    font-size: 1.25em;
+    margin: 0.5em 0;
+    color: var(--cor-fonte);
+}
+
+.input > input {
+    font-family: var(--fonte);
+    width: 99%;
+    outline: none;
+    border-radius: 10px;
+    padding: 0.5em;
+    color: var(--cor-fonte)
+}
+
+.input > input::placeholder {
+    font-family: var(--fonte);
+    color: grey;
+}
+
+.btn-card {
+    width: 100%;
+    font-family: var(--fonte);
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--background);
+    background-color: var(--cor-fonte);
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    margin: 2em 0 1em 0;
+    border-radius: 10px;
+}
+
+@media (min-width: 800px) {
+    .descrição-imagem {
+        width: 50%;
+    }
+
+    .input > label {
+        font-size: 1.25em;
+        margin: 0.75em 0;
+    }
+
+    .input > input {
+        width: 95%;
+        padding: 0.75em;
+        font-size: 1em;
+    }
+
+    .btn-card {
+        font-size: 1.25em;
+        font-weight: 700;
+        color: var(--background);
+        background-color: var(--cor-fonte);
+        text-transform: uppercase;
+        padding: 0.5em 1em;
+        margin: 2em 0 1em 0;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .login{
+        display: flex;
+    }
+
+    .left-login {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1em;
+    }
+
+    .descrição {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+    }
+
+    .descrição-titulo {
+        display: block;
+        font-size: 1.75rem;
+        color: var(--cor-fonte);
+        font-weight: 700;
+    }
+
+    .descrição-imagem {
+        width: 79%;
+        align-self: center;
+        margin: 3em 0;
+    }
+
+    .right-login {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card {
+        width: 50%;
+        margin-top: 4em;
+    }
+
+    .input > label {
+        font-size: 1em;
+        margin: 0.5em 0;
+        color: var(--cor-fonte);
+    }
+
+    .input > input {
+        padding: 0.75em;
+        font-size: 1em;
+    }
+}
+
